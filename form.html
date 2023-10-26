@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Welcome to my form</h1>
+
+    {% if error_message %}
+        <p class="error-message">{{ error_message }}</p>
+    {% endif %}
+
+    <form method="POST">
+        Fighter Name: <input type="text" name="luchador"><br>
+        Location: <input type="text" name="lugar"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
